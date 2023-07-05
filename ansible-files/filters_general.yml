@@ -1,0 +1,14 @@
+---
+- name: Capture Kernel Version
+  hosts: node1
+
+  tasks:
+
+    - name: Collect only kernel facts
+      ansible.builtin.setup:
+        filter:
+        - '*kernel'
+      register: setup
+
+    - ansible.builtin.debug:
+        var: setup
