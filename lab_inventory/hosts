@@ -1,0 +1,10 @@
+[web]
+node1 ansible_host=3.16.212.186
+node2 ansible_host=3.15.240.8
+node3 ansible_host=18.119.163.46
+
+[control]
+ansible-1 ansible_host=3.139.238.113
+
+[ftpserver]
+node2
